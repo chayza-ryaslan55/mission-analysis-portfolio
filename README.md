@@ -1,6 +1,6 @@
 # Spacecraft Mission Analysis & Flight Dynamics Portfolio
 
-A modular, high-precision Python library for spacecraft trajectory propagation, orbital mechanics conversions, and maneuver design. Built to demonstrate core competencies in astrodynamics, numerical methods, and clean software architecture for mission analysis and flight dynamics engineering.
+A modular Python library for spacecraft trajectory propagation, orbital mechanics conversions, and maneuver design. Built to demonstrate core competencies in astrodynamics, numerical methods, and clean software architecture for mission analysis and flight dynamics engineering.
 
 ---
 
