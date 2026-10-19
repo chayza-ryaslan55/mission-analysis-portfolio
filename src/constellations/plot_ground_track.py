@@ -8,7 +8,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 src_dir = os.path.abspath(os.path.join(current_dir, '..'))
 if src_dir not in sys.path:
     sys.path.append(src_dir)
-    
+
 from propagation.propagation import propagate_orbit
 from propagation.frames import keplerian_to_cartesian
 from constellations.geometry import eci_to_ecef, ecef_to_geodetic, calculate_elevation

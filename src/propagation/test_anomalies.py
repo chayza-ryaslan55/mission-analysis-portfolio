@@ -1,6 +1,6 @@
 
 import numpy as np
-from anomalies import Eccentric_anomaly, true_anomaly
+from propagation.anomalies import Eccentric_anomaly, true_anomaly
 
 M = 1.0
 e = 0.1
