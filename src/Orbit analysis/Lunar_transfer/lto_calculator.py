@@ -74,7 +74,7 @@ def propagate_lto(h_park_km=300.0, num_points=1000):
 
     # Initial state vector at perigee: start on +X, velocity pointing along -Y
     # so the ellipse sweeps across the positive X domain toward the Moon at +384,400 km
-    r0 = np.array([r_park, 0.0, 0.0])
+    r0 = np.array([-r_park, 0.0, 0.0])
     v0 = np.array([0.0, -v_perigee, 0.0])
     initial_state = np.concatenate((r0, v0))
 

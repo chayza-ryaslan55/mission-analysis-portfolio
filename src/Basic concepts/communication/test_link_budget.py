@@ -4,7 +4,7 @@ import os
 
 # Set up paths to import sibling packages
 current_dir = os.path.dirname(os.path.abspath(__file__))
-src_dir = os.path.abspath(os.path.join(current_dir, '..'))
+src_dir = os.path.abspath(os.path.join(current_dir, '../..'))
 if src_dir not in sys.path:
     sys.path.append(src_dir)
 

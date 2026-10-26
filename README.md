@@ -26,18 +26,18 @@ mission-analysis-portfolio/
 
 ## Key Features & Modules
 
-### 1. Core Propagation & Perturbations (`src/propagation/propagator.py`)
+### 1. Core Propagation & Perturbations (`src/Basic concepts/propagation/propagator.py`)
 * Implements numerical orbit propagation using SciPy's high-order adaptive step-size IVP solvers (`solve_ivp`).
 * **J2 Perturbation Modeling:** Accounts for Earth's oblate geometry (equatorial bulge), capturing critical real-world phenomena like **nodal regression** (essential for Sun-Synchronous Orbits) and **apsidal rotation**.
 
-### 2. Coordinate Frames & Transformations (`src/propagation/frames.py`)
+### 2. Coordinate Frames & Transformations (`src/Basic concepts/propagation/frames.py`)
 * Converts seamlessly between **Classical Orbital Elements (COEs)**—semi-major axis ($a$), eccentricity ($e$), inclination ($i$), RAAN ($\Omega$), argument of perigee ($\omega$), and true anomaly ($\nu$)—and Earth-Centered Inertial (ECI) Cartesian state vectors.
 
-### 3. Orbit Anomalies & Kepler's Equation Solver (`src/propagation/anomalies.py`)
+### 3. Orbit Anomalies & Kepler's Equation Solver (`src/Basic concepts/propagation/anomalies.py`)
 * Computes conversions between **Mean Anomaly ($M$)**, **Eccentric Anomaly ($E$)**, and **True Anomaly ($\nu$)**.
 * Implements the **Newton-Raphson iterative method** to solve Kepler's transcendental equation for eccentric orbits with high precision.
 
-### 4. Orbital Maneuvers & Boundary-Value Solver (`src/maneuvers/transfers.py`)
+### 4. Orbital Maneuvers & Boundary-Value Solver (`src/Basic concepts/maneuvers/transfers.py`)
 * **Impulsive Transfers:** Computes $\Delta V$ costs and time of flight for coplanar orbital changes (Hohmann transfers).
 * **Lambert's Problem Solver:** A robust implementation of the Universal Variable formulation for solving boundary-value problems ($\mathbf{r}_1 \rightarrow \mathbf{r}_2$ given time-of-flight), crucial for rendezvous and interplanetary trajectory design.
 

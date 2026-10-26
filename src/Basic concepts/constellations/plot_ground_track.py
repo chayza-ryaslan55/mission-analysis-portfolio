@@ -5,7 +5,7 @@ import os
 
 # Add parent path to import propagation and geometry modules
 current_dir = os.path.dirname(os.path.abspath(__file__))
-src_dir = os.path.abspath(os.path.join(current_dir, '..'))
+src_dir = os.path.abspath(os.path.join(current_dir, '../..'))
 if src_dir not in sys.path:
     sys.path.append(src_dir)
 

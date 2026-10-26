@@ -1,11 +1,10 @@
 import numpy as np
-import numpy as np
 import sys
 import os
 
 # Add the project root 'src' directory to the Python path dynamically
 current_dir = os.path.dirname(os.path.abspath(__file__))
-src_dir = os.path.abspath(os.path.join(current_dir, '..'))
+src_dir = os.path.abspath(os.path.join(current_dir, '../..'))
 if src_dir not in sys.path:
     sys.path.append(src_dir)
 
